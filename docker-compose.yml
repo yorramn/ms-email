@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  spring_ms_email:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "root"
+    ports:
+      - "5432:5432"
+    volumes:
+      - .docker/database:/var/lib/postgresql/data  

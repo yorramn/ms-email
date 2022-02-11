@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_ms_email
+    username: postgres
+    password: root
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: bielyorramn@gmail.com
+    password: bzmfnfxaugugouft
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
