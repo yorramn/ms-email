@@ -6,6 +6,7 @@ import yorramn.learn.emailmicroservice.enums.StatusEmail;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 @Entity
 @Data
@@ -15,7 +16,7 @@ public class Email implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private UUID id;
     private String owner;
     private String mailFrom;
     private String mailTo;

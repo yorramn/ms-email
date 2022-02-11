@@ -22,3 +22,7 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
+  rabbitmq:
+    addresses: amqps://bpwjuggn:V0hs9u6IREbaSRuqi09vE8PHDdjDy4H8@beaver.rmq.cloudamqp.com/bpwjuggn
+    template:
+      default-receive-queue: ms.email
